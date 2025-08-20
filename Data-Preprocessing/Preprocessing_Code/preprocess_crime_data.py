@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import SMOTE
 
-#load titanic dataset
+#load dataset
 df = pd.read_csv('C:/5-python_crisp-ml(q)/understanding_data_assignments_datasets/crime_data.csv')
 print('initial shape:', df.shape) #(50, 5)
 df.head()
@@ -85,3 +85,4 @@ df.drop(columns=['Rape'], inplace=True)
 df.to_csv('crime_data_prep.csv',encoding='utf-8')
 import os
 os.getcwd() 
+
