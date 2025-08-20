@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import SMOTE
 
-#load titanic dataset
+#load dataset
 df = pd.read_csv('C:/5-python_crisp-ml(q)/understanding_data_assignments_datasets/mtcars.csv')
 print('initial shape:', df.shape) #(32, 11)
 df.head()
@@ -167,3 +167,4 @@ with target col as mpg the cols are as follows :
 df.to_csv('mtcars_prep.csv', index=False)
 import os
 os.getcwd() 
+
